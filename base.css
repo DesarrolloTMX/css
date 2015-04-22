@@ -20,8 +20,11 @@ body {
 	color: #4d4d4d;
 	font-family: sans-serif;
 	line-height: 1.4;
-	  width: 1060px;
-  margin: 0 auto;
+	/* width: 1060px; */
+	
+	margin: 0 auto;
+	max-width: 1060px;
+	width: 100%;
 }
 a {
 	color: inherit;
@@ -342,8 +345,12 @@ dl, ol, ul {
 	font-size: 14px;
 	line-height: normal; /* Needed because of bad CSS reset */
 	z-index: 10;
-	width: 1060px;
-  margin: 0 auto;
+	/* width: 1060px;
+  margin: 0 auto; */
+  
+	margin: 0 auto;
+	max-width: 1060px;
+	width: 100%;
 }
 #header:before {
 	content: "";
