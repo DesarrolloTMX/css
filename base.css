@@ -2073,7 +2073,6 @@ dl, ol, ul {
 .categoryRecommendationWidget, .catalogEntryRecommendationWidget {
     margin: 0 auto!important;
     max-width: 1000px;
-	background-color:red;
 }
 
 .catPos{
@@ -2083,6 +2082,7 @@ dl, ol, ul {
 
 #headerRow2 ul#departmentsMenu li:first-child .departmentButton :first-child{ padding-right:60px;}
 
+/* styles.css*/
 
 .homeHero > .textContainer > .button {
  background-color:#FA8039!important;
@@ -2099,5 +2099,103 @@ dl, ol, ul {
     width: 243px!important;
 }
 
+div.namePartPriceContainer > div > span.price {
+    color: #fa8846 !important;
+    display: block;
+    font-size: 30px !important;
+    font-weight: bold;
+    line-height: 20px !important;
+}
 
 
+
+.homeHero{
+	 width: 1000px !important;
+	 margin: 0 auto !important;
+}
+
+
+.color_swatch_list .color_swatch_selected, .color_swatch_list .color_swatch:hover, div.product_listing_container .list_mode .product > .product_info > .product_color_swatches > .color_swatch_list .color_swatch_selected, div.product_listing_container .list_mode .product > .product_info > .product_color_swatches > .color_swatch_list .color_swatch:hover {
+    border-radius: 0% !important;
+    box-shadow: 0 0 0 3px #fac549;
+    vertical-align: middle;
+	width: 15px !important;
+}
+
+.color_swatch_list .color_swatch, div.product_listing_container .list_mode .product > .product_info > .product_color_swatches > .color_swatch_list .color_swatch {
+	border-radius: 0% !important;
+	width: 15px !important;
+}
+
+.product_text {
+    border-bottom: 0px solid #e5e5e5 !important;
+    line-height: 15px;
+    padding-bottom: 11px;
+    padding-top: 11px;
+}
+
+
+div.namePartPriceContainer {
+    border-bottom: 0px solid #e5e5e5 !important;
+    padding-bottom: 4px;
+}
+
+.definingAttributes .attBorder {
+    border-top: 0px solid #e5e5e5 !important;
+}
+
+.available {
+    border-bottom: 0px solid #e5e5e5 !important;
+    float: left;
+    padding: 11px 0;
+    width: 100%;
+}
+
+.product_page_content .widget_product_image_viewer .image_container {
+    border-bottom: 0px dotted #777777 !important;
+    width: 95%;
+}
+
+.button.primary {
+    background-image: linear-gradient(#288AFF, #288AFF) !important;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    color: #FFFFFF !important;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 29px;
+    max-width: 100%;
+    min-height: 29px;
+    text-align: center;
+    width: 200px;
+}
+
+#widget_breadcrumb{
+	margin-top: 60px !important;
+}
+
+.tab_container {
+    border-left: 0px solid #e9e9e9 !important;
+    border-radius: 3px 3px 0 0;
+    border-right: 0px solid #e9e9e9 !important;
+    border-top: 0px solid #ca4200 !important;
+    color: #ca4000;
+    display: table-cell;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    outline: 1px solid white;
+    padding: 10px;
+    position: relative !important;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 40%;
+}
+
+.tab {
+    border: 0px solid #e9e9e9 !important;
+    border-radius: 5px;
+    margin-top: 0 !important;
+    width: 99%;
+}
