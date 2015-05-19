@@ -259,6 +259,11 @@ dl, ol, ul {
 .row.margin-true > div > div:last-of-type { margin-bottom: 5px; }
 .row.margin-true > div > .row { margin: 0 !important; }
 
+.rowContainer {
+    margin: 0 auto !important;
+    width: 1000px !important;
+}
+
 /* Row */
 
 .row:after {
@@ -878,7 +883,6 @@ dl, ol, ul {
 
 #footer {
 	padding: 10px;
-	background: blue;
 	text-align: center;
 	/* Omar */
 }
@@ -896,7 +900,7 @@ dl, ol, ul {
 @media (min-width: 961px) {
 	#footerRow1 {
 		/* width: 880px; */
-		width: 100%;
+		width: 1000px;
 		text-align: center;
 	}
 }
@@ -914,7 +918,7 @@ dl, ol, ul {
 /* 	border-bottom: 1px solid #bfbfbf;
 	border-bottom: 1px solid rgba(185,185,185,0.45); 
 	color: #e9e9e9; */
-	color: gray;
+	color: gray !important;
 	font-size: 14px;
 	font-weight: bold;
 }
@@ -936,7 +940,7 @@ dl, ol, ul {
 #footerRow1 > .section > ul {
 	margin-left: 30px;
 	padding: 10px;
-	color: #ffffff;
+	color: #808080;
 	font-size: 12px;
 	list-style: none;
 }
@@ -1805,6 +1809,7 @@ dl, ol, ul {
 <!-- CSS PERSONALIZADO -->
  #footerCustomerServiceSection > .textoSuscribete{
   color: #82add7 !important;
+  color: #3e7ec7 !important;
   font-weight: 600 !important;
   font-size: 15px;
   padding-top: 10px; 
