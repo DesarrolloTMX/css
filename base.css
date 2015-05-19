@@ -348,7 +348,7 @@ dl, ol, ul {
 /* Arrow decoration */
 
 .departmentButton:after, #quickLinksButton:after, #widget_minishopcart:after, #departmentsButton:after, #searchButton:after, .pageControlButton:after {
-	content: "";
+	/*content: "";*/
 	display: block;
 	position: absolute;
 	width: 7px;
@@ -359,7 +359,7 @@ dl, ol, ul {
 	background-position: -101px -1px;
 }
 .departmentButton.selected:after {
-	content: " ";
+	/*content: " ";*/
 	background-position: -21px -21px;
 }
 #quickLinksButton:after {
@@ -422,7 +422,7 @@ dl, ol, ul {
 
 .rowContainer {
     margin: 0 auto !important;
-    width: 1000px !important;
+    max-width: 1000px !important;
 }
 
 /* Row */
@@ -1076,12 +1076,14 @@ dl, ol, ul {
 #footer {
 	padding: 10px;
 	text-align: center;
-	/* Omar */
+	max-width:1000px;
+	margin: 0 auto;
 }
 #footerRow1 {
 	display: inline-block;
 	width: 440px;
 	text-align: left;
+	width:100%;
 }
 @media (max-width: 480px) {
 	#footerRow1 {
@@ -1092,7 +1094,7 @@ dl, ol, ul {
 @media (min-width: 961px) {
 	#footerRow1 {
 		/* width: 880px; */
-		width: 1000px;
+		max-width: 1000px;
 		text-align: center;
 	}
 }
@@ -2068,7 +2070,7 @@ dl, ol, ul {
  #downFooter{
   font-size: 10px;
   text-align: center;
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   padding-top: 15px;
  }
@@ -2160,7 +2162,7 @@ div.namePartPriceContainer > div > span.price {
 
 
 .homeHero{
-	 width: 1000px !important;
+	 max-width: 1000px !important;
 	 margin: 0 auto !important;
 }
 
