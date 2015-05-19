@@ -877,7 +877,7 @@ dl, ol, ul {
 
 #footer {
 	padding: 10px;
-	background-image: url("../images/responsive/footerBG.png");
+	background: blue;
 	text-align: center;
 }
 #footerRow1 {
