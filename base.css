@@ -145,6 +145,12 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
 	padding: 0;
 	font-size: inherit;
 }
+
+
+h1 {
+    color: #1b83ff !important;
+}
+
 button, input, textarea, select {
 	margin: 0;
 	color: inherit;
@@ -165,6 +171,30 @@ dl, ol, ul {
 }
 
 /* Button */
+
+
+.textContainer .button {
+    background-color: #fa8039 !important;
+    border-radius: 5px !important;
+    color: #fff;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    margin-left: 1px;
+    margin-top: 15px;
+    padding: 9px 20px;
+    text-align: center;
+    width: 100px;
+}
+
+.textContainer .title {
+    color: #1b83ff !important;
+    font-family: arial,helvetica;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 42px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
 
 .basicButton {
 	display: inline-block;
@@ -2055,7 +2085,7 @@ dl, ol, ul {
 
 
 .homeHero > .textContainer > .button {
- background-color:#66BAAA!important;
+ background-color:#FA8039!important;
  font-size:15px!important;
  font-weight:bold;
  padding:5px 40px!important;
