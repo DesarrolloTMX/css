@@ -879,6 +879,7 @@ dl, ol, ul {
 	padding: 10px;
 	background: blue;
 	text-align: center;
+	/* Omar */
 }
 #footerRow1 {
 	display: inline-block;
@@ -1934,3 +1935,6 @@ dl, ol, ul {
     max-width: 243px!important;
     width: 243px!important;
 }
+
+
+
