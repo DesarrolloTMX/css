@@ -177,7 +177,7 @@ dl, ol, ul {
     background-color: #fa8039 !important;
     border-radius: 5px !important;
     color: #fff;
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: 'ubunturegular',Arial,Helvetica,sans-serif;
     font-size: 20px;
     margin-left: 1px;
     margin-top: 15px;
@@ -188,7 +188,7 @@ dl, ol, ul {
 
 .textContainer .title {
     color: #1b83ff !important;
-    font-family: arial,helvetica;
+    font-family:'ubunturegular',arial,helvetica;
     font-size: 40px;
     font-weight: bold;
     line-height: 42px;
@@ -197,7 +197,7 @@ dl, ol, ul {
 }
 
 .basicButton {
-	display: inline-block;
+	/*display: inline-block;
 	position: relative;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#fbbb0b), to(#ee9505));
 	background-image: linear-gradient(#fbbb0b, #ee9505);
@@ -205,15 +205,22 @@ dl, ol, ul {
 	border: 1px solid #bfbfbf;
 	border-radius: 4px;
 	border-spacing: 0;
+	vertical-align: middle;*/
+	display: inline-block;
+	position: relative;
+	border-spacing: 0;
 	vertical-align: middle;
+	
 }
 .basicButton:hover {
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#fed60c), to(#f8af06));
+/*	background-image: -webkit-gradient(linear, left top, left bottom, from(#fed60c), to(#f8af06));
 	background-image: linear-gradient(#fed60c, #f8af06);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Gradient(startColorStr='#fed60c', endColorStr='#f8af06')";
+*/
+	background: #199bd5;
 }
 .basicButton > span {
-	display: table-cell;
+/*	display: table-cell;
 	height: 30px;
 	padding: 0 15px;
 	border: 1px solid #fdd466;
@@ -221,6 +228,18 @@ dl, ol, ul {
 	line-height: normal;
 	text-align: center;
 	vertical-align: middle;
+	*/
+	display: table-cell;
+	max-width: 196px;
+	height: 35px;
+	padding: 0 30px;
+	line-height: normal;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'ubunturegular',arial;
+    font-size: 11px;
+	text-rendering: optimizeLegibility;
+	color:#fff;
 }
 
 /* Department button */
@@ -271,9 +290,8 @@ dl, ol, ul {
 	line-height: normal;
 	text-align: center;
 	vertical-align: middle;
-	font-family: arial;
+	font-family: 'ubunturegular',arial;
     font-size: 11px;
-    font-weight: bold;
 	text-rendering: optimizeLegibility;
 	color:#fff;
 }
@@ -322,7 +340,8 @@ dl, ol, ul {
 .basicMenu a, .departmentMenu a, #quickLinksBar > li > a, #searchFilterButton {
 	text-decoration: none;
 }
-.basicMenu a:hover, .departmentMenu a:hover, #quickLinksBar > li > a:hover, #searchFilterButton:hover {
+/*.departmentMenu a:hover,*/
+.basicMenu a:hover, #quickLinksBar > li > a:hover, #searchFilterButton:hover {
 	text-decoration: underline;
 }
 
@@ -732,14 +751,15 @@ dl, ol, ul {
 	margin: 0 18px;
 	padding: 0;
 	list-style: none;
+	  display: inline-block;
 }
 #departmentsMenu > li {
 	display: inline-block;
 	position: relative;
 }
 #departmentsMenu > li.hidden {
-	/*position: absolute;
-	visibility: hidden;*/
+	position: absolute;
+	visibility: hidden;
 }
 #departmentsMenu > li > .link,
 #departmentsMenu > li > .toggle {
@@ -751,15 +771,19 @@ dl, ol, ul {
 .departmentMenu {
 	display: none;
 	position: absolute;
-	left: 2px;
+	/*left: 2px;*/
 	top: 100%;
 	width: 360px;
 	margin: 0;
 	padding: 0 16px;
-	background-color: #ffffff;
-	border: 1px solid #c9cece;
-	border-top: 3px solid #ffa200;
-	border-radius: 0 0 4px 4px;
+	/* background-color:#fff; */
+	background-color: rgba(255, 255, 255, 0.9);
+	border-bottom: 1px solid #c9cece;
+	border-right: 1px solid #c9cece;
+	border-left: 1px solid #c9cece;
+	/*border-top: 1px solid #fff;*/
+	/*border-top: 3px solid #ffa200;*/
+	/*border-radius: 0 0 4px 4px;*/
 	font-size: 12px;
 	list-style: none;
 }
@@ -769,8 +793,15 @@ dl, ol, ul {
 .departmentMenu > .header {
 	margin: 0;
 	padding: 8px 0;
-	border-bottom: 1px solid #ffa200;
+	border-bottom: 1px solid #b5b5b5;
 	font-size: inherit;
+	display:none;	
+}
+
+@media (max-width: 600px){
+.departmentMenu > .header {
+	display:block;
+}
 }
 .departmentMenu > .header > .link {
 	display: block;
@@ -782,15 +813,24 @@ dl, ol, ul {
 	display: none;
 }
 .departmentMenu > li {
-	padding: 8px 0;
-	border-bottom: 1px solid #ffa200;
+	padding: 5px 0;
+	/*padding: 8px 0;*/
+	border-bottom: 1px solid #b5b5b5;
 }
 .departmentMenu > li > a {
 	display: block;
 	margin: 0 -8px;
 	padding: 8px;
 	font-weight: bold;
+	color:#393646;
+	text-decoration:none;
 }
+
+.departmentMenu > li > a::after{
+  right: 25px;
+  content: ">";
+  position: absolute;}
+
 #allDepartmentsMenu {
 	width: 240px;
 	padding-bottom: 16px;
@@ -824,6 +864,7 @@ dl, ol, ul {
 	padding: 8px;
 	font-weight: bold;
 	text-transform: uppercase;
+	color:#189ad6;
 }
 .categoryList > li > a:last-child {
 	font-weight: normal;
@@ -866,36 +907,19 @@ dl, ol, ul {
 #searchButton {
 	display: none;
 }
-/*#searchBar {
-	position: absolute;
-	right: 18px;
-	top: 0;
-	width: 33%;
-	padding: 2px;
-}
-#searchBox {
-	position: relative;
-	height: 38px;
-	background-color: #ffffff;
-	border: 1px solid #bfbfbf;
-	border-radius: 4px;
-	text-align: right;
-	vertical-align: middle;
-}
-#searchBox > * {
-	text-align: left;
-}*/
+
 #searchBar {
-	position: absolute;
 	/*right: 18px;
 	top: 0;*/
-	right: 35%;
-	top: 50px;
-	width: 33%;
-	padding: 2px;
+	width: 30%;
+	overflow: visible;
+	clear: both;
+    top: 55px;
+	right: 4%;
+	position: absolute;
 }
 #searchBox {
-	position: relative;
+	position: absolute;
 	height:35px;
 	/*height: 38px;*/
 	background-color: #ffffff;
@@ -1663,8 +1687,8 @@ dl, ol, ul {
 	}
 	#departmentsButton > span {
 		display: block;
-		height: 36px;
-		line-height: 36px;
+		height: 35px;
+		line-height: 35px;
 		padding: 0 10px;
 		text-align: left;
 	}
@@ -1681,7 +1705,7 @@ dl, ol, ul {
 		padding: 0 15px 15px 15px;
 		background-color: #ffffff;
 		border: 1px solid #c9cece;
-		border-top: 3px solid #ffa200;
+		/*border-top: 3px solid #ffa200; */
 		border-radius: 0 0 4px 4px;
 		color: #404040;
 		font-size: 12px;
@@ -2077,7 +2101,7 @@ dl, ol, ul {
 .texto_carrusel_banner{
 	width:45%;
 	float:right;
-	font-family:arial; 
+	font-family:'ubunturegular',arial; 
 	color:#384651; 
     margin: 0 !important;
     right: 10%;
