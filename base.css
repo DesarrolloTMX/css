@@ -87,7 +87,7 @@ dl, ol, ul {
 .departmentButton {
 	display: inline-block;
 	position: relative;
-	margin: 0px;
+	/*margin: 0px;
 	/*background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f9f9), to(#e5e8e9));
 	background-image: linear-gradient(#f7f9f9, #e5e8e9);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Gradient(startColorStr='#f7f9f9', endColorStr='#e5e8e9')";
@@ -709,6 +709,7 @@ dl, ol, ul {
 
 
 
+
 /*** Search bar ***/
 
 #searchButton {
@@ -716,26 +717,19 @@ dl, ol, ul {
 }
 #searchBar {
 	position: absolute;
-	/*right: 18px;
-	top: 0;*/
-	right: 35%;
-	top: 35px;
+	right: 18px;
+	top: 0;
 	width: 33%;
 	padding: 2px;
 }
 #searchBox {
 	position: relative;
-	height:35px;
-	/*height: 38px;*/
+	height: 38px;
 	background-color: #ffffff;
 	border: 1px solid #bfbfbf;
 	border-radius: 4px;
 	text-align: right;
 	vertical-align: middle;
-	 width: calc(150% - 60%);
-    min-width: 60px;
-    margin-right: 59px;
-    
 }
 #searchBox > * {
 	text-align: left;
@@ -899,7 +893,6 @@ dl, ol, ul {
 		text-align: center;
 	}
 }
-@media (min-width: 961px) {
 @media (min-width: 961px) {
 	#footerRow1 {
 		/* width: 880px; */
