@@ -537,7 +537,7 @@ dl, ol, ul {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Gradient(startColorStr='#52646e', endColorStr='#596a72')";*/
 	/*border-top: 1px solid #c9cece;*/
 	/*border-bottom: 1px solid #c9cece;*/
-	position:absolute;
+	/*position:absolute;*/
 	width:100%;
 	background:rgba(0, 0, 0, 0.7);
 	height:35px;
@@ -572,6 +572,10 @@ dl, ol, ul {
 	color: #767676;
 	list-style: none;
 	text-align: right;
+	font-size: 10px;
+    top: -15px;
+    position: absolute;
+    right: 0px;
 }
 #quickLinksBar > li {
 	display: inline-block;
@@ -734,8 +738,8 @@ dl, ol, ul {
 	position: relative;
 }
 #departmentsMenu > li.hidden {
-	position: absolute;
-	visibility: hidden;
+	/*position: absolute;
+	visibility: hidden;*/
 }
 #departmentsMenu > li > .link,
 #departmentsMenu > li > .toggle {
@@ -862,7 +866,7 @@ dl, ol, ul {
 #searchButton {
 	display: none;
 }
-#searchBar {
+/*#searchBar {
 	position: absolute;
 	right: 18px;
 	top: 0;
@@ -880,6 +884,28 @@ dl, ol, ul {
 }
 #searchBox > * {
 	text-align: left;
+}*/
+#searchBar {
+	position: absolute;
+	/*right: 18px;
+	top: 0;*/
+	right: 35%;
+	top: 50px;
+	width: 33%;
+	padding: 2px;
+}
+#searchBox {
+	position: relative;
+	height:35px;
+	/*height: 38px;*/
+	background-color: #ffffff;
+	border: 1px solid #bfbfbf;
+	border-radius: 4px;
+	text-align: right;
+	vertical-align: middle;
+	 width: calc(150% - 60%);
+    min-width: 60px;
+    margin-right: 59px;
 }
 #searchTermWrapper {
 	position: absolute;
