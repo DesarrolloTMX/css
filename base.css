@@ -716,19 +716,26 @@ dl, ol, ul {
 }
 #searchBar {
 	position: absolute;
-	right: 18px;
-	top: 0;
+	/*right: 18px;
+	top: 0;*/
+	right: 35%;
+	top: 35px;
 	width: 33%;
 	padding: 2px;
 }
 #searchBox {
 	position: relative;
-	height: 38px;
+	height:35px;
+	/*height: 38px;*/
 	background-color: #ffffff;
 	border: 1px solid #bfbfbf;
 	border-radius: 4px;
 	text-align: right;
 	vertical-align: middle;
+	 width: calc(150% - 60%);
+    min-width: 60px;
+    margin-right: 59px;
+    
 }
 #searchBox > * {
 	text-align: left;
@@ -893,8 +900,10 @@ dl, ol, ul {
 	}
 }
 @media (min-width: 961px) {
+@media (min-width: 961px) {
 	#footerRow1 {
-		width: 880px;
+		/* width: 880px; */
+		width: 100%;
 		text-align: center;
 	}
 }
@@ -909,9 +918,10 @@ dl, ol, ul {
 	position: relative;
 	margin-left: 30px;
 	padding: 5px 10px;
-	border-bottom: 1px solid #bfbfbf;
-	border-bottom: 1px solid rgba(185,185,185,0.45);
-	color: #e9e9e9;
+/* 	border-bottom: 1px solid #bfbfbf;
+	border-bottom: 1px solid rgba(185,185,185,0.45); 
+	color: #e9e9e9; */
+	color: gray;
 	font-size: 14px;
 	font-weight: bold;
 }
@@ -923,8 +933,8 @@ dl, ol, ul {
 	bottom: -1px;
 	width: 30px;
 	height: 3px;
-	background-color: #bfbfbf;
-	background-color: rgba(185,185,185,0.45);
+/* 	background-color: #bfbfbf;
+	background-color: rgba(185,185,185,0.45); */
 	border-radius: 0 0 0 3px;
 }
 #footerRow1 > .section > .header > .toggle {
@@ -952,9 +962,18 @@ dl, ol, ul {
 	position: relative;
 	z-index: 1;
 	margin: 0;
-	padding: 0 50px 10px 10px;
+	padding:0px;
+	/*padding: 0px 50px 10px 10px;*/
 	color: #010f1c;
 	font-weight: inherit;
+}
+.carousel h2 .titleItems{
+	color: #43addd;
+    font-size: 19px;
+    font-weight: normal;
+	margin: 20px auto 0 auto;
+    max-width: 1000px;
+    padding: 0;	
 }
 .carousel > .content {
 	position: relative;
@@ -1140,7 +1159,7 @@ dl, ol, ul {
 }
 
 .carousel.background-true {
-	background-image: url("../images/colors/color1/widget_carousel/widget_bg.png");
+	/*background-image: url("../images/colors/color1/widget_carousel/widget_bg.png");*/
 }
 .carousel.border-true {
 	border: 1px solid #e9e9e9;
@@ -1278,7 +1297,11 @@ dl, ol, ul {
 	width: 125%;
 	margin: 0 -12.5%;
 }
-.contentCarouselWidget .left_espot,
+/*.contentCarouselWidget .left_espot,
+.contentCarouselWidget .left_espot.centered {
+	width: 80%;
+	margin: 0 auto;
+}*/
 .contentCarouselWidget .left_espot.centered {
 	width: 80%;
 	margin: 0 auto;
