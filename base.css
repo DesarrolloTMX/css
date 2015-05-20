@@ -2167,8 +2167,9 @@ div.namePartPriceContainer > div > span.price {
 }
 
 @media (max-width: 520px){
-.homeHero > .textContainer {
-  margin-left: 20% !important;
+	.homeHero > .textContainer {
+	  margin-left: 20% !important;
+	}
 }
 
 .color_swatch_list .color_swatch_selected, .color_swatch_list .color_swatch:hover, div.product_listing_container .list_mode .product > .product_info > .product_color_swatches > .color_swatch_list .color_swatch_selected, div.product_listing_container .list_mode .product > .product_info > .product_color_swatches > .color_swatch_list .color_swatch:hover {
@@ -2275,6 +2276,10 @@ div.namePartPriceContainer {
     transition: background-color 0.2s ease 0s;
 }
 
+#content .collapsible:hover {
+    background-color: #FFFFFF !important;
+}
+
 .collapsible > h3 {
     background: #F7F7F7 none repeat scroll 0 0;
     display: block;
@@ -2295,4 +2300,26 @@ div.namePartPriceContainer {
     padding: 10px 5%;
 }
 
+#price_range_input {
+    text-decoration: none !important;
+}
 
+.optionContainer > .title {
+    background: #F7F7F7 !important;
+    border-bottom: 0px solid #e3e1e1 !important;
+    border-radius: 5px 5px 0 0;
+    border-top: 0px solid #e3e1e1 !important;
+    color: #545454;
+    cursor: pointer;
+	font-weight: lighter !important;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 1px 0;
+    padding: 0 5%;
+	text-transform: lowercase !important;
+}
+
+#content .collapsible > h3 {
+	display: none !important;
+}
