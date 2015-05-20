@@ -2166,6 +2166,10 @@ div.namePartPriceContainer > div > span.price {
 	 margin: 0 auto !important;
 }
 
+@media (max-width: 520px){
+.homeHero > .textContainer {
+  margin-left: 20% !important;
+}
 
 .color_swatch_list .color_swatch_selected, .color_swatch_list .color_swatch:hover, div.product_listing_container .list_mode .product > .product_info > .product_color_swatches > .color_swatch_list .color_swatch_selected, div.product_listing_container .list_mode .product > .product_info > .product_color_swatches > .color_swatch_list .color_swatch:hover {
     border-radius: 0% !important;
