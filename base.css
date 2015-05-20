@@ -2325,3 +2325,12 @@ div.namePartPriceContainer {
 #content .collapsible > h3 {
 	display: none !important;
 }
+
+.optionContainer .arrow {
+	display: none !important;
+}
+
+ul.facetSelect li div.facetCountContainer {
+    display: inline-block;
+    float: right !important;
+}
