@@ -1143,7 +1143,7 @@ dl, ol, ul {
 #footerRow1 > .section > ul > li > a {
 	display: block;
 	margin: 0 -10px;
-	padding: 10px;
+	padding: 3px;
 }
 
 /*** wc/widget/Carousel - fluid, touch-enabled carousel responsive to container width ***/
@@ -2333,4 +2333,25 @@ div.namePartPriceContainer {
 ul.facetSelect li div.facetCountContainer {
     display: inline-block;
     float: right !important;
+}
+
+div#widget_breadcrumb > ul li a {
+  color: #374452 !important;
+}
+div#widget_breadcrumb > ul li.current {
+  color: #374452 !important;
+  font-weight:bold;
+}
+
+div#widget_breadcrumb > ul span.divider, div#widget_breadcrumb > ul li.divider {
+  color: #374452!important;
+}
+
+.productListingWidget {
+  border: none !important; 
+}
+
+.catEntryGrid_border {
+  border-bottom: 1px solid#b5b5b5!important; 
+  width: 100%!important; 
 }
