@@ -1159,12 +1159,13 @@ dl, ol, ul {
 	font-weight: inherit;
 }
 .carousel h2 .titleItems{
-	color: #43addd;
+	color: #189AD6;
     font-size: 19px;
     font-weight: normal;
 	margin: 20px auto 0 auto;
     max-width: 1000px;
     padding: 0;	
+	text-align: center;
 }
 .carousel > .content {
 	position: relative;
