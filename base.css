@@ -2336,8 +2336,14 @@ div.namePartPriceContainer {
 
 ul.facetSelect li div.facetCountContainer {
     display: inline-block;
+    float: left !important;
+}
+
+ul.facetSelect .outline > .facetCountContainer {
+    display: inline-block;
     float: right !important;
 }
+
 
 div#widget_breadcrumb > ul li a {
   color: #374452 !important;
@@ -2358,6 +2364,11 @@ div#widget_breadcrumb > ul span.divider, div#widget_breadcrumb > ul li.divider {
 .catEntryGrid_border {
   border-bottom: 1px solid#b5b5b5!important; 
   width: 100%!important; 
+}
+
+.singleFacet{
+	padding-top: 20px !important; 
+	padding-bottom: 15px !important;
 }
 
 /* FIN CATEGORIAS MENU IZQUIERDO*/ 
