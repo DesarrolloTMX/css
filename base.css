@@ -2174,12 +2174,16 @@ div.namePartPriceContainer > div > span.price {
 	}
 }
 
+/* Inicia categorias izquierdo*/ 
+
 .color_swatch_list .color_swatch_selected, .color_swatch_list .color_swatch:hover, div.product_listing_container .list_mode .product > .product_info > .product_color_swatches > .color_swatch_list .color_swatch_selected, div.product_listing_container .list_mode .product > .product_info > .product_color_swatches > .color_swatch_list .color_swatch:hover {
     border-radius: 0% !important;
     box-shadow: 0 0 0 3px #fac549;
     vertical-align: middle;
 	width: 15px !important;
 }
+
+
 
 .color_swatch_list .color_swatch, div.product_listing_container .list_mode .product > .product_info > .product_color_swatches > .color_swatch_list .color_swatch {
 	border-radius: 0% !important;
@@ -2354,4 +2358,24 @@ div#widget_breadcrumb > ul span.divider, div#widget_breadcrumb > ul li.divider {
 .catEntryGrid_border {
   border-bottom: 1px solid#b5b5b5!important; 
   width: 100%!important; 
+}
+
+/* FIN CATEGORIAS MENU IZQUIERDO*/ 
+
+/* inicia mosaico */
+
+.selectWrapper {
+    background-color: #FFFFFF !important;
+    border: 2px solid #1987C2 !important;
+    border-radius: 0px !important;
+    display: inline-block;
+    position: relative;
+}
+
+div.grid_icon, a.grid_icon:hover, div.list_icon, a.list_icon:hover {
+    background-color: #FFFFFF !important;
+}
+
+.grid_icon, .list_icon {
+    border: 0px solid #a0a0a0 !important;
 }
