@@ -2379,3 +2379,17 @@ div.grid_icon, a.grid_icon:hover, div.list_icon, a.list_icon:hover {
 .grid_icon, .list_icon {
     border: 0px solid #a0a0a0 !important;
 }
+
+.selectWrapper .dijitSelect {
+  padding: 0px!important;
+}
+.dijitRight {
+  background:#1987c2;
+}
+
+.selectWrapper .dijitSelect .dijitArrowButtonContainer:before {
+  width: 12px !important;
+  height: 11px !important;
+  background-position: -3px -1px !important;
+  margin: 8px !important;
+  }
