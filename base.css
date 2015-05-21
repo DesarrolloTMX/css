@@ -599,7 +599,7 @@ dl, ol, ul {
 }
 #quickLinksBar > li {
 	display: inline-block;
-	border-right: 1px solid #c9cece;
+	/*border-right: 1px solid #c9cece;*/
 	text-align: left;
 	vertical-align: middle;
 }
@@ -959,7 +959,7 @@ dl, ol, ul {
 #searchFilterButton {
 	display: inline-block;
 	position: relative;
-	width: 126px;
+	width: 110px;
 	padding: 5px 10px;
 	border-left: 1px solid #374452;
 	/*border-right: 1px solid #bfbfbf;*/
@@ -1672,7 +1672,7 @@ dl, ol, ul {
 	/* Mini cart button */
 
 	#widget_minishopcart {
-		margin: 0 !important;
+		margin: 0 !important;		
 	}
 
 	/* Mini cart */
@@ -1817,12 +1817,13 @@ dl, ol, ul {
 		display: none;
 	}
 	#searchBar.active {
-		display: block;
-		position: static;
-		right: auto;
-		width: auto;
-		padding: 2px 15px;
-		border-top: 1px solid #c9cece;
+	  display: inline-block;
+	  position: relative;
+	  left: 110px!important;
+	  top: 43px!important;
+	  width: 280px;
+	  padding: 2px 0px;
+	  /*border-top: 1px solid #c9cece;*/
 	}
 	#searchBox > .submitButton {
 		width: 10px;
@@ -1836,20 +1837,25 @@ dl, ol, ul {
 		left: -201px;
 	}
 
+	#searchBox  {
+		height: 30px!important;
+	}
 	
-	@media (max-width: 600px){
-
 	#searchButton{	
   		background-color:none!important;
 		border: 0px!important;
 		height: 33px!important;
-		margin: 40px -69px!important;	
+		margin: 40px -69px 0 0!important;
 		background:none;
 	}
 	#MiniShoppingCart {
     top: -11px!important;
+    right: -70px!important;
 	}
 
+
+#searchTermWrapper {
+    margin: 0;
 }
 	/* Autocomplete menu */
 
