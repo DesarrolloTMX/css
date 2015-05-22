@@ -370,7 +370,7 @@ dl, ol, ul {
 	background-position: -121px -1px;
 }
 /* #widget_minishopcart.selected:after,*/
-#quickLinksButton.selected:after, #departmentsButton.selected:after, #allDepartmentsButton.selected:after, #searchButton.selected:after {
+#quickLinksButton.selected:after, #departmentsButton.selected:after, #allDepartmentsButton.selected:after  /*, #searchButton.selected:after */ {
 	content: " ";
 	background-position: -241px -21px;
 }
@@ -413,8 +413,9 @@ dl, ol, ul {
 
 /* Row container */
 
-.rowContainer,
-.rowContainer > .row { padding: /*5px 0;*/ }
+/*.rowContainer,*/
+.rowContainer > .row { /*padding: 5px 0;*/ max-width:1000px; margin:0 auto; }
+.rowContainer > .row.full { max-width:100%!important;}
 .rowContainer > .row.margin-true { padding: 0 5px; }
 .row.margin-true > div > div { margin: 10px 5px; }
 .row.margin-true > div > div:first-of-type { margin-top: 0px; }
@@ -423,7 +424,6 @@ dl, ol, ul {
 
 .rowContainer {
     margin: 0 auto !important;
-    /*max-width: 1000px !important;*/
 }
 
 /* Row */
@@ -547,7 +547,9 @@ dl, ol, ul {
 #headerRow1 {
 	position: relative;
 	/* height: 78px; */
-	height: 95px;
+  max-width: 1000px;
+  height: 95px;
+  margin: 0 auto;
 }
 #headerRow2 {
 	/*position: relative;*/
@@ -612,6 +614,7 @@ dl, ol, ul {
 }
 #quickLinksBar > li > a {
 	display: block;
+
 	position: relative;
 	max-width: 200px;
 	margin: -10px 0;
@@ -749,10 +752,12 @@ dl, ol, ul {
 	display: none;
 }
 #departmentsMenu {
-	margin: 0 18px;
+	/*margin: 0 18px;*/
 	padding: 0;
 	list-style: none;
-	  display: inline-block;
+	/*display: inline-block;*/
+	max-width:1000px;
+	margin:0 auto;
 }
 #departmentsMenu > li {
 	display: inline-block;
@@ -910,7 +915,7 @@ dl, ol, ul {
 }
 
 #searchBar {
-    left: 13%;
+    left: 28%;
     padding: 2px;
     position: absolute;
     top: 30px;
@@ -919,8 +924,7 @@ dl, ol, ul {
 }
 #searchBox {
 	position: relative;
-	height:35px;
-	/*height: 38px;*/
+	height:30px;
 	background-color: #ffffff;
 	border: 1px solid #bfbfbf;
 	border-radius: 4px;
@@ -935,7 +939,7 @@ dl, ol, ul {
 	left: 0;
 	right: 170px;
 	height: 18px;
-	padding: 6px 10px;
+	padding: 3px 10px;
 	margin: 4px 0;
 }
 #searchTermWrapper > .placeholder {
@@ -959,7 +963,7 @@ dl, ol, ul {
 #searchFilterButton {
 	display: inline-block;
 	position: relative;
-	width: 126px;
+	width: 90px;
 	padding: 5px 10px;
 	border-left: 1px solid #374452;
 	/*border-right: 1px solid #bfbfbf;*/
@@ -1000,7 +1004,7 @@ dl, ol, ul {
   position: relative;
   width: 14px;
   height: 14px;
-  border: 11px solid #374452;
+  border: 8px solid #374452;
   vertical-align: middle;
   overflow: hidden;
   background: #374452;
@@ -1817,15 +1821,19 @@ dl, ol, ul {
 	}
 	#searchBar {
 		display: none;
+		padding:0px;
 	}
 	#searchBar.active {
-		display: block;
-		position: static;
-		right: auto;
-		width: auto;
-		padding: 2px 15px;
-		border-top: 1px solid #c9cece;
+  display: block;
+  position: relative;
+  width: 265px;
+  padding: 0px;
+  border-top: 0px solid #c9cece;
+  top: 43px;
 	}
+	#quickLinksBar > li {
+  border-right: 0px;
+  }
 	#searchBox > .submitButton {
 		width: 10px;
 		height: 18px;
@@ -1927,7 +1935,7 @@ dl, ol, ul {
 
 	#searchTermWrapper {
 		right: 58px;
-		border-right: 1px solid #bfbfbf;
+		border-right: 0px solid #bfbfbf;
 	}
 	#searchFilterButton {
 		display: none;
@@ -2138,6 +2146,7 @@ dl, ol, ul {
 	height:365px;
 	background-position:top center;
 	background-size:cover;
+	overflow:hidden;
 }
 
 .home_carrusel_banner1{
@@ -2157,7 +2166,7 @@ dl, ol, ul {
 	color:#384651; 
     margin: 0 !important;
     right: 10%;
-	top: 10%;
+	top: 5%;
     text-align: center;
 }
 .homeBannerTitulo{ font-size:30px;}
@@ -2215,10 +2224,14 @@ div.namePartPriceContainer > div > span.price {
 	 margin: 0 auto !important;
 }
 
-@media (max-width: 520px){
-	.homeHero > .textContainer {
-	  margin-left: 20% !important;
-	}
+@media (max-width: 600px){
+
+.texto_carrusel_banner {
+top:20px;
+width: 80%;
+}  
+
+
 }
 
 /* Inicia categorias izquierdo*/ 
@@ -2471,3 +2484,10 @@ div.grid_icon, a.grid_icon:hover, div.list_icon, a.list_icon:hover {
 .catPos > .container > a {
   color: #666666;
 }
+
+.homeHero > .textContainer {
+   padding:0!important; 
+}   
+
+  
+  
