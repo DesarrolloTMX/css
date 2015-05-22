@@ -413,9 +413,9 @@ dl, ol, ul {
 
 /* Row container */
 
-.rowContainer,
-.rowContainer > .row { padding: /*5px 0;*/ }
-.rowContainer > .row.margin-true { padding: 0 5px; }
+/*.rowContainer,*/
+.rowContainer > .row { /*padding: 5px 0;*/max-width: 1000px;  margin: 0 auto;}
+.rowContainer > .row.margin-true { /*padding: 0 5px;*/ }
 .row.margin-true > div > div { margin: 10px 5px; }
 .row.margin-true > div > div:first-of-type { margin-top: 0px; }
 .row.margin-true > div > div:last-of-type { margin-bottom: 5px; }
@@ -499,7 +499,7 @@ dl, ol, ul {
 	.ccol12 { width: 100%; }
 	.rowContainer,
 	.rowContainer > .row { /*padding: 10px 0;*/ }
-	.rowContainer > .row.margin-true { padding: 0 10px; }
+	.rowContainer > .row.margin-true { /*padding: 0 10px; */}
 	.row.margin-true > div > div { /*margin: 10px 10px;*/ margin: 10px 10px; }
 	.row.margin-true > div > div:first-of-type { /*margin-top: 10px;*/ }
 	.row.margin-true > div > div:last-of-type { margin-bottom: 10px; }
@@ -1669,6 +1669,7 @@ dl, ol, ul {
 		width: auto;
 	}
 
+
 	/* Mini cart button */
 
 	#widget_minishopcart {
@@ -2428,4 +2429,9 @@ div.grid_icon, a.grid_icon:hover, div.list_icon, a.list_icon:hover {
  #MiniShoppingCart {
     position: absolute;
     right: -100px;
+}
+
+.row.margin-true.full {
+    max-width: 100%;
+    width: 100%;
 }
