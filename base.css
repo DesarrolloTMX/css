@@ -284,7 +284,7 @@ dl, ol, ul {
 	display: table-cell;
 	max-width: 196px;
 	height: 35px;
-	padding: 0 30px;
+	padding: 0 15px;
 	/*border: 1px solid #f1f3f3;
 	border-radius: 3px;*/
 	line-height: normal;
@@ -595,9 +595,10 @@ dl, ol, ul {
     margin: 0;
     padding: 0;
     position: absolute;
-    right: 22%;
+    /*right: 22%;*/
     text-align: right;
     top: 15px;
+	width: 100%;
 }
 #quickLinksBar > li {
 	display: inline-block;
@@ -614,7 +615,6 @@ dl, ol, ul {
 }
 #quickLinksBar > li > a {
 	display: block;
-
 	position: relative;
 	max-width: 200px;
 	margin: -10px 0;
@@ -919,20 +919,21 @@ dl, ol, ul {
     padding: 2px;
     position: absolute;
     top: 30px;
-    width: 60%;
-    z-index: 1;
+	width: 500px;
+	left: 50%;
+	margin-left: -250px;
 }
 #searchBox {
 	position: relative;
-	height:30px;
+	height:35px;
 	background-color: #ffffff;
 	border: 1px solid #bfbfbf;
 	border-radius: 4px;
 	text-align: right;
 	vertical-align: middle;
-	 width: calc(150% - 60%);
+	/*width: calc(150% - 60%);
     min-width: 60px;
-    margin-right: 59px;
+    margin-right: 59px;*/
 }
 #searchTermWrapper {
 	position: absolute;
@@ -1002,8 +1003,8 @@ dl, ol, ul {
 #searchBox > .submitButton {
   display: inline-block;
   position: relative;
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   border: 8px solid #374452;
   vertical-align: middle;
   overflow: hidden;
@@ -1014,8 +1015,8 @@ dl, ol, ul {
 	content: url("../images/responsive/rwdUI.png");
 	display: block;
 	position: absolute;
-	left: -121px;
-	top: -21px;
+	left: -118px;
+	top: -18px;
 }
 #searchBox > .submitButton:hover:before {
 	left: -141px;
@@ -1103,19 +1104,14 @@ dl, ol, ul {
 		max-width: 1000px;
 		text-align: center;
 	}
-	
-	#footerRow1 > .section {
-		/* width: 100% ; */
-	}
 }
 #footerRow1 > .section {
 	display: inline-block;
-	/* width: 200px; */
+	width: 200px;
 	padding: 10px;
 	text-align: left;
 	vertical-align: top;
 }
-
 #footerRow1 > .section > .header {
 	position: relative;
 	margin-left: 30px;
@@ -1244,6 +1240,7 @@ dl, ol, ul {
 	left: -41px;
 }
 .carousel > .nextPageButton:hover:before,
+
 .carousel > .nextPageButton:active:before {
 	left: -121px;
 }
@@ -1632,7 +1629,7 @@ dl, ol, ul {
 
 /*** RWD-A ***/
 
-@media (max-width: 600px) {
+@media (max-width: 952px) {
 
 	/* Menu */
 
@@ -1852,8 +1849,6 @@ dl, ol, ul {
 	}
 
 	
-	@media (max-width: 600px){
-
 	#searchButton{	
   		background-color:none!important;
 		border: 0px!important;
@@ -1865,7 +1860,6 @@ dl, ol, ul {
     top: -11px!important;
 	}
 
-}
 	/* Autocomplete menu */
 
 	#searchDropdown {
@@ -1874,8 +1868,9 @@ dl, ol, ul {
 		top: 41px;
 	}
 
-	/* Footer */
 
+
+	/* Footer */
 	#footerRow1 > .section > .header:before {
 		height: 30px;
 		border-radius: 3px 3px 0 3px;
@@ -1909,50 +1904,16 @@ dl, ol, ul {
 		top: -1px;
 	}
 	#footerRow1 > .section > ul {
-		display: block;
+		display: none;
 	}
 	#footerRow1 > .section.active > ul {
 		display: block;
-	}
-	
-	#footerCustomerServiceSection{
-		width: 100% !important;
-	}
-	
-	#footerCorporateInfoSection{
-		width: 100% !important;
-	}
-	
-	#footerExploreSection{
-		width: 100% !important;
-	}
-	
-	 input[type=text], textarea {
-		-webkit-transition: all 0.30s ease-in-out;
-		-moz-transition: all 0.30s ease-in-out;
-		-ms-transition: all 0.30s ease-in-out;
-		-o-transition: all 0.30s ease-in-out;
-		outline: none;
-		padding: 3px 0px 3px 3px;
-		margin: 5px 1px 3px 0px;
-		border: 1px solid #DDDDDD;
-		padding: 10px;
-		font-size: 12px !important;
-		width: 100% !important;
 	}
 
 	/* Carousel */
 
 	.contentCarouselWidget {
 		overflow: hidden;
-	}
-
-}
-
-@media (max-width: 830px){
-	
-	 input[type=text], textarea {
-		width: 100% !important;
 	}
 }
 
@@ -2065,21 +2026,21 @@ dl, ol, ul {
 
 /* <!-- CSS PERSONALIZADO --> */
  #footerCustomerServiceSection{
-  width: 22%;
+  width: 22% !important;
   padding-right: 0px !important; 
   padding-left: 0px !important;
   float: left;
  }
  
  #footerCorporateInfoSection{
-  width: 36%;
+  width: 36% !important;
   padding-right: 0px !important; 
   padding-left: 0px !important;
   float: left;
  }
  
  #footerExploreSection{
-  width: 42%;
+  width: 42% !important;
   padding-right: 0px !important; 
   padding-left: 0px !important;
   float: left;
@@ -2116,7 +2077,6 @@ dl, ol, ul {
  
  .inputCorreo{
   padding-top: 10px;
-  width: 95%;
  }
  
  .footer-list{
@@ -2527,4 +2487,42 @@ div.grid_icon, a.grid_icon:hover, div.list_icon, a.list_icon:hover {
 }   
 
   
-  
+.localizadorTienda {
+  position: absolute;
+  left: 50%;
+  margin-left: 60px;
+  top: 15px;
+}  
+
+li.localizadorTienda :before {
+	content: url("../images/localiza.jpg");
+	width:15px;
+	height:20px;
+	position:absolute;
+	left: -3px;
+	top: 5px;
+}
+	
+.asistenciaTienda {
+  position: absolute;
+  left: 50%;
+  margin-left: 185px;
+  top: 15px;
+  z-index:1;
+}
+
+li.asistenciaTienda :before {
+	content: url("../images/asistencia.jpg");
+	width:15px;
+	height:20px;
+	position:absolute;
+	left: -3px;
+	top: -4px;
+	z-index:1;
+}  
+
+.asistenciaTienda  ul :before, li.asistenciaTienda span > ul >li  :before { background:red; content:none!important;}
+
+li.asistenciaTienda span > ul >li{
+ list-style:none;background:red;
+}
