@@ -1103,14 +1103,19 @@ dl, ol, ul {
 		max-width: 1000px;
 		text-align: center;
 	}
+	
+	#footerRow1 > .section {
+		/* width: 100% ; */
+	}
 }
 #footerRow1 > .section {
 	display: inline-block;
-	width: 200px;
+	/* width: 200px; */
 	padding: 10px;
 	text-align: left;
 	vertical-align: top;
 }
+
 #footerRow1 > .section > .header {
 	position: relative;
 	margin-left: 30px;
@@ -1904,10 +1909,36 @@ dl, ol, ul {
 		top: -1px;
 	}
 	#footerRow1 > .section > ul {
-		display: none;
+		display: block;
 	}
 	#footerRow1 > .section.active > ul {
 		display: block;
+	}
+	
+	#footerCustomerServiceSection{
+		width: 100% !important;
+	}
+	
+	#footerCorporateInfoSection{
+		width: 100% !important;
+	}
+	
+	#footerExploreSection{
+		width: 100% !important;
+	}
+	
+	 input[type=text], textarea {
+		-webkit-transition: all 0.30s ease-in-out;
+		-moz-transition: all 0.30s ease-in-out;
+		-ms-transition: all 0.30s ease-in-out;
+		-o-transition: all 0.30s ease-in-out;
+		outline: none;
+		padding: 3px 0px 3px 3px;
+		margin: 5px 1px 3px 0px;
+		border: 1px solid #DDDDDD;
+		padding: 10px;
+		font-size: 12px !important;
+		width: 100% !important;
 	}
 
 	/* Carousel */
@@ -1918,7 +1949,12 @@ dl, ol, ul {
 
 }
 
-
+@media (max-width: 830px){
+	
+	 input[type=text], textarea {
+		width: 100% !important;
+	}
+}
 
 /*** Mobile (portrait) - 0-400px ***/
 
@@ -2029,21 +2065,21 @@ dl, ol, ul {
 
 /* <!-- CSS PERSONALIZADO --> */
  #footerCustomerServiceSection{
-  width: 22% !important;
+  width: 22%;
   padding-right: 0px !important; 
   padding-left: 0px !important;
   float: left;
  }
  
  #footerCorporateInfoSection{
-  width: 36% !important;
+  width: 36%;
   padding-right: 0px !important; 
   padding-left: 0px !important;
   float: left;
  }
  
  #footerExploreSection{
-  width: 42% !important;
+  width: 42%;
   padding-right: 0px !important; 
   padding-left: 0px !important;
   float: left;
@@ -2080,6 +2116,7 @@ dl, ol, ul {
  
  .inputCorreo{
   padding-top: 10px;
+  width: 95%;
  }
  
  .footer-list{
